@@ -15,6 +15,7 @@ void loop() {
 	delayMicroseconds(10);
 	digitalWrite(out, LOW);
 	int t = pulseIn(in, HIGH);
+	Serial.println(t);
 	Serial.print((double)t * 340.0 / 10000.0 / 2);
 	Serial.println("cm");
 	delay(1000);
